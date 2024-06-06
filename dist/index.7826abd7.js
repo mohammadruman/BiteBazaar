@@ -142,11 +142,11 @@
       this[globalName] = mainExports;
     }
   }
-})({"lzCP3":[function(require,module,exports) {
+})({"APLPM":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SECURE = true;
+var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
 module.bundle.HMR_BUNDLE_ID = "f8a609f57826abd7";
@@ -592,7 +592,7 @@ $parcel$ReactRefreshHelpers$c1db.prelude(module);
 try {
 //Parcel is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration. It is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration.
 //Hot Module Reloding  (HMR) is a feature to update the application without full page reload. It is like a live reload. It is a Webpack feature that updates the application when the code changes without refreshing the browser.
-//File watcher Alogorithm
+//File watcher Alogorithm c++
 //Parcel uses a file watcher algorithm to detect changes in the file system. When a file is changed, it will be recompiled and the browser will be refreshed. This is a very efficient way to update the application without full page reload.
 //Minify the code
 //Cleaning the code
@@ -600,6 +600,8 @@ try {
 //image Optimization
 //catching while development
 //compression
+//zero configuration
+//Transitive dependencies are the dependencies of the package that your package depends on. For example, if your package depends on package A, and package A depends on package B, then package B is a transitive dependency of your package.
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
@@ -24658,6 +24660,6 @@ module.exports = require("96622d495519d4e");
     exports.setSignature = setSignature;
 })();
 
-},{}]},["lzCP3","2Ew96"], "2Ew96", "parcelRequiref9fe")
+},{}]},["APLPM","2Ew96"], "2Ew96", "parcelRequiref9fe")
 
 //# sourceMappingURL=index.7826abd7.js.map
