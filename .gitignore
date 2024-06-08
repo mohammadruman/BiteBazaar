@@ -1,3 +1,8 @@
-node_modules/
-parcel cache/
-dist/
+# Parcel cache
+.parcel-cache
+
+# Other common ignores
+node_modules
+dist
+.DS_Store
+*.log
