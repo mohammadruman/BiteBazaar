@@ -40,9 +40,14 @@ border: solid 1px black;
 }
 .res-logo{
     width: 140px;
-    
+    height: 140px;
     text-align: center;
     margin: auto;
         display: block;
 
+}
+.filter-btn{
+    margin: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
 }

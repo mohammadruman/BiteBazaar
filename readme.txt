@@ -10,3 +10,16 @@
 //compression
 //zero configuration
 //Transitive dependencies are the dependencies of the package that your package depends on. For example, if your package depends on package A, and package A depends on package B, then package B is a transitive dependency of your package.
+
+
+
+V-5
+Two type of export/ import 
+
+- Default export / import 
+export Default component;
+import component from "path"
+
+-Named export/ import 
+export const component
+import {const} from "path"
