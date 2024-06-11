@@ -779,6 +779,570 @@ const resList = [
             link: "https://www.swiggy.com/restaurants/spice-symphony-jp-nagar-3rd-phase-102468",
             type: "WEBLINK"
         }
-    }
+    },
+    {
+                 name: "Biryani Grills",
+        cloudinaryImageId: "pdsvarxwfwp1vds1z6lr",
+        locality: "Saguna More",
+        areaName: "Rukanpura",
+        costForTwo: "₹383 for two",
+        cuisines: ["Biryani", "North Indian"],
+        avgRating: 4.2,
+        parentId: "242325",
+        avgRatingString: "4.2",
+        totalRatingsString: "500+",
+        sla: {
+            deliveryTime: 43,
+            lastMileTravel: 11.6,
+            serviceability: "SERVICEABLE",
+            slaString: "40-45 mins",
+            lastMileTravelString: "11.6 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 05:00:00",
+            opened: true
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {},
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "20% OFF",
+            subHeader: "UPTO ₹50"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+                    
+                  },
+                  {
+        name: "Cake 24x7",
+        cloudinaryImageId: "yuai9tmymsdhq4az9os2",
+        locality: "Road No 12",
+        areaName: "Don Bosco Raod",
+        costForTwo: "₹400 for two",
+        cuisines: ["Bakery", "Indian", "Ice Cream Cakes", "Cakes and Pastries"],
+        avgRating: 3.7,
+        veg: true,
+        parentId: "54688",
+        avgRatingString: "3.7",
+        totalRatingsString: "100+",
+        sla: {
+            deliveryTime: 35,
+            lastMileTravel: 4.8,
+            serviceability: "SERVICEABLE",
+            slaString: "35-40 mins",
+            lastMileTravelString: "4.8 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-17 00:00:00",
+            opened: true
+        },
+        badges: {
+            imageBadges: [
+                {
+                    imageId: "v1695133679/badges/Pure_Veg111.png",
+                    description: "pureveg"
+                }
+            ]
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {
+                    badgeObject: [
+                        {
+                            attributes: {
+                                description: "pureveg",
+                                imageId: "v1695133679/badges/Pure_Veg111.png"
+                            }
+                        }
+                    ]
+                },
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "50% OFF",
+            discountTag: "FLAT DEAL"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+     {
+        name: "Cafe Hideout",
+        cloudinaryImageId: "db36928443988d0c1ec71ac018695225",
+        locality: "Govind Mitra Road Corner",
+        areaName: "PMCH",
+        costForTwo: "₹370 for two",
+        cuisines: ["Continental", "Chinese", "Beverages"],
+        avgRating: 4.2,
+        parentId: "53259",
+        avgRatingString: "4.2",
+        totalRatingsString: "100+",
+        sla: {
+            deliveryTime: 33,
+            lastMileTravel: 5,
+            serviceability: "SERVICEABLE",
+            slaString: "30-35 mins",
+            lastMileTravelString: "5.0 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 05:30:00",
+            opened: true
+        },
+        badges: {
+            imageBadges: [
+                {
+                    imageId: "Rxawards/_CATEGORY-Gourmet.png",
+                    description: "Delivery!"
+                }
+            ]
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {
+                    badgeObject: [
+                        {
+                            attributes: {
+                                description: "Delivery!",
+                                imageId: "Rxawards/_CATEGORY-Gourmet.png"
+                            }
+                        }
+                    ]
+                },
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "30% OFF",
+            subHeader: "UPTO ₹75"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+    {
+        name: "Heaven Meal 24*7",
+        cloudinaryImageId: "12579b16e37776facff7974e32c367f7",
+        locality: "Lohianagar",
+        areaName: "Fraser Road",
+        costForTwo: "₹500 for two",
+        cuisines: ["Indian"],
+        avgRating: 4.1,
+        parentId: "488329",
+        avgRatingString: "4.1",
+        totalRatingsString: "500+",
+        sla: {
+            deliveryTime: 23,
+            lastMileTravel: 2.8,
+            serviceability: "SERVICEABLE",
+            slaString: "20-25 mins",
+            lastMileTravelString: "2.8 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 04:00:00",
+            opened: true
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {},
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "50% OFF",
+            subHeader: "UPTO ₹100"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+        {
+        name: "Baskin Robbins - Ice Cream Desserts",
+        cloudinaryImageId: "85ccae4e3576f9330af102c46ca85395",
+        locality: "One Mall",
+        areaName: "Srikrishnapuri",
+        costForTwo: "₹150 for two",
+        cuisines: ["Desserts", "Ice Cream"],
+        avgRating: 4.5,
+        veg: true,
+        parentId: "5588",
+        avgRatingString: "4.5",
+        totalRatingsString: "1K+",
+        sla: {
+            deliveryTime: 28,
+            lastMileTravel: 4.5,
+            serviceability: "SERVICEABLE",
+            slaString: "25-30 mins",
+            lastMileTravelString: "4.5 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 05:00:00",
+            opened: true
+        },
+        badges: {
+            imageBadges: [
+                {
+                    imageId: "v1695133679/badges/Pure_Veg111.png",
+                    description: "pureveg"
+                }
+            ],
+            textExtendedBadges: [
+                {
+                    iconId: "Ratnesh_Badges/test2.png",
+                    shortDescription: "Perfect ice cream delivery",
+                    fontColor: "#7E808C"
+                }
+            ]
+        },
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {
+                    badgeObject: [
+                        {
+                            attributes: {
+                                description: "pureveg",
+                                imageId: "v1695133679/badges/Pure_Veg111.png"
+                            }
+                        }
+                    ]
+                },
+                textBased: {},
+                textExtendedBadges: {
+                    badgeObject: [
+                        {
+                            attributes: {
+                                description: "",
+                                fontColor: "#7E808C",
+                                iconId: "Ratnesh_Badges/test2.png",
+                                shortDescription: "Perfect ice cream delivery"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "50% OFF",
+            subHeader: "UPTO ₹100"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+    {
+        name: "Benzoz Pizza",
+        cloudinaryImageId: "h00vciwuc7ctejcx24qc",
+        locality: "Boring Canal Road",
+        areaName: "Sri Krishnapuri",
+        costForTwo: "₹250 for two",
+        cuisines: ["Italian"],
+        avgRating: 3.5,
+        parentId: "43487",
+        avgRatingString: "3.5",
+        totalRatingsString: "1K+",
+        sla: {
+            deliveryTime: 27,
+            lastMileTravel: 4.9,
+            serviceability: "SERVICEABLE",
+            slaString: "25-30 mins",
+            lastMileTravelString: "4.9 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 03:00:00",
+            opened: true
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {},
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "₹125 OFF",
+            subHeader: "ABOVE ₹199",
+            discountTag: "FLAT DEAL"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+    {
+        name: "Ginni 99 Tasty",
+        cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/18/3b934b02-0adb-4d91-9641-31f172ec6326_571093.jpg",
+        locality: "Sri Krishna Puri",
+        areaName: "Sri Krishna Puri",
+        costForTwo: "₹100 for two",
+        cuisines: ["Thalis", "Biryani", "North Indian", "Chinese", "Snacks"],
+        avgRating: 4.1,
+        parentId: "437232",
+        avgRatingString: "4.1",
+        totalRatingsString: "500+",
+        sla: {
+            deliveryTime: 28,
+            lastMileTravel: 4.9,
+            serviceability: "SERVICEABLE",
+            slaString: "25-30 mins",
+            lastMileTravelString: "4.9 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 04:30:00",
+            opened: true
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {},
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "₹100 OFF",
+            subHeader: "ABOVE ₹349",
+            discountTag: "FLAT DEAL"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+     {
+        name: "Burger Singh (Big Punjabi Burgers)",
+        cloudinaryImageId: "972a37599772cdc7df93a0855ad87591",
+        locality: "Lohia Nagar",
+        areaName: "Kankarbagh",
+        costForTwo: "₹500 for two",
+        cuisines: ["American", "Desserts"],
+        avgRating: 4.2,
+        parentId: "375065",
+        avgRatingString: "4.2",
+        totalRatingsString: "1K+",
+        sla: {
+            deliveryTime: 30,
+            lastMileTravel: 1.7,
+            serviceability: "SERVICEABLE",
+            slaString: "30-35 mins",
+            lastMileTravelString: "1.7 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 05:00:00",
+            opened: true
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {},
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "50% OFF",
+            subHeader: "UPTO ₹100"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+    {
+        name: "Chicago Pizza",
+        cloudinaryImageId: "zdewduvaniajau4vqamt",
+        locality: "Ps. Agamkuan",
+        areaName: "Kumharar",
+        costForTwo: "₹200 for two",
+        cuisines: ["Pizzas", "Italian", "American", "Desserts"],
+        avgRating: 3.8,
+        parentId: "60277",
+        avgRatingString: "3.8",
+        totalRatingsString: "500+",
+        sla: {
+            deliveryTime: 28,
+            lastMileTravel: 5.5,
+            serviceability: "SERVICEABLE",
+            slaString: "25-30 mins",
+            lastMileTravelString: "5.5 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2024-06-11 04:00:00",
+            opened: true
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {},
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "40% OFF",
+            subHeader: "UPTO ₹80"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {}
+    },
+    {
+    name: "Cupcake Bliss Cake & Desserts",
+    cloudinaryImageId: "40f193d8b23afb2988489dac1258962f",
+    locality: "Boring Road",
+    areaName: "Sri Krishnapuri",
+    costForTwo: "₹200 for two",
+    cuisines: ["Bakery", "Desserts", "Ice Cream", "Beverages"],
+    avgRating: 4.3,
+    parentId: "66732",
+    avgRatingString: "4.3",
+    totalRatingsString: "100+",
+    sla: {
+        deliveryTime: 33,
+        lastMileTravel: 4.7,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "4.7 km",
+        iconType: "ICON_TYPE_EMPTY"
+    },
+    availability: {
+        nextCloseTime: "2024-06-11 03:00:00",
+        opened: true
+    },
+    badges: {},
+    isOpen: true,
+    type: "F",
+    badgesV2: {
+        entityBadges: {
+            imageBased: {},
+            textBased: {},
+            textExtendedBadges: {}
+        }
+    },
+    aggregatedDiscountInfoV3: {
+        header: "30% OFF",
+        subHeader: "UPTO ₹75"
+    },
+    differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+            lottie: {},
+            video: {}
+        }
+    },
+    reviewsSummary: {},
+    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    restaurantOfferPresentationInfo: {}
+}
+
+                  
+             
 ];
 export default resList;

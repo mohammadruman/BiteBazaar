@@ -23,3 +23,6 @@ import component from "path"
 -Named export/ import 
 export const component
 import {const} from "path"
+
+
+
