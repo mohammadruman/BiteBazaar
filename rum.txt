@@ -1,3 +1,4 @@
+#parcel
 //Parcel is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration. It is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration.
 //Hot Module Reloding  (HMR) is a feature to update the application without full page reload. It is like a live reload. It is a Webpack feature that updates the application when the code changes without refreshing the browser.
 //File watcher Alogorithm c++
@@ -26,3 +27,7 @@ import {const} from "path"
 
 
 
+Routing
+Two Types of Routing
+-Client side Routing
+-server side Routing
