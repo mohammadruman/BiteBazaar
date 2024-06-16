@@ -1,49 +1,41 @@
 import {useEffect,useState} from 'react'
 import Shimmer from './Shimmer';
-
+import {useParams} from 'react-router-dom'
+import { MENU_API_URL, MENU_API_REMAINING_URL } from '../../utils/constants';
 const RestaurantMenu = () => {
+    const {resId} = useParams();
+    console.log(resId)
     const [resInfo,setresInfo] = useState(null);
 
     useEffect(()=>{
         fetchMenu();
     },[])
     const fetchMenu= async()=>{
-        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.5940947&lng=85.1375645&restaurantId=693892&catalog_qa=undefined&submitAction=ENTER");
+        const data = await fetch(MENU_API_URL+resId+MENU_API_REMAINING_URL);
         const json = await data.json();
-        console.log(json);
-        setresInfo(json);    
-    }
-    //const {text, }
-    if( resInfo===null){
-        <Shimmer/>
-    }
-      
-    
-   const  {
-  name,
-  cuisines,
-  costForTwoMessage,totalRatingsString
-} = resInfo?.data?.cards[2]?.card?.card?.info || {};
-
-  const {itemCards} = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card|| [];
+       
+        setresInfo(json.data);
+ console.log(json);
+       
+    };
+   
+ if(resInfo===null) return <Shimmer/>;
+ const {itemCards} = resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card;
+ console.log(itemCards)
  
- console.log(itemCards);
-
-          
-
   return (
     <div className="menu">
-        <h1>{name}</h1>
-        <h2>{cuisines}</h2>
-        <h3>{costForTwoMessage}</h3>
-        <h3>{totalRatingsString}</h3>
+        <h1>{resInfo.cards[0].card.card.text}</h1>
+         <p>{resInfo.cards[2].card.card.info.cuisines.join(", ")} - 
+            {resInfo.cards[2].card.card.info.costForTwoMessage}</p>
         <div className="menu-items">
         <ul>
-            
-            <li>{}</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
+            {itemCards.map(item => (<li key={item.card.info.id}>
+                {item.card.info.name} - {"Rs."}
+                 {item.card.info.price/100 || item.card.info.defaultPrice/100}
+                 </li>
+                 ))}
+         
         </ul>
         </div>
       
