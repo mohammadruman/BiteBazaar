@@ -20,7 +20,7 @@ const RestaurantMenu = () => {
     };
    
  if(resInfo===null) return <Shimmer/>;
- const {itemCards} = resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card;
+ const {itemCards} = resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[3].card.card;
  console.log(itemCards)
  
   return (
