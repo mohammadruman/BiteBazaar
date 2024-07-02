@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Footer from "./components/Footer";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const AppLayour =()=>{
@@ -26,6 +27,7 @@ const AppLayour =()=>{
             }
             
             <Outlet/>
+            <Footer/>
              </div>
     )
 }

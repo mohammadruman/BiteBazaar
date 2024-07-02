@@ -40,7 +40,7 @@ border: solid 1px black;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
 }
 .res-logo{
     width: 100%;
@@ -127,4 +127,26 @@ border-radius: 10px;
 }
 .filter{
     display: flex;
+   align-items: center;
 }
+    
+.Footer{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid 1px black ;
+}
+.User-card{
+    padding: 10px;
+    border: solid 1px black;
+}
+.gitimageuser{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.gitimageuser-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
