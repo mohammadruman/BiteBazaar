@@ -1,23 +1,12 @@
 import {useEffect,useState} from 'react'
 import Shimmer from './Shimmer';
 import {useParams} from 'react-router-dom'
-import { MENU_API_URL, MENU_API_REMAINING_URL } from '../../utils/constants';
+import useRestaurantMenu from '../../utils/useRestaurantMenu';
+
 const RestaurantMenu = () => {
     const {resId} = useParams();
-    console.log(resId)
-    const [resInfo,setresInfo] = useState(null);
-
-    useEffect(()=>{
-        fetchMenu();
-    },[])
-    const fetchMenu= async()=>{
-        const data = await fetch(MENU_API_URL+resId+MENU_API_REMAINING_URL);
-        const json = await data.json();
-       
-        setresInfo(json.data);
- console.log(json);
-       
-    };
+    const resInfo = useRestaurantMenu(resId); 
+   
    
  if(resInfo===null) return <Shimmer/>;
  const {itemCards} = resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[3].card.card;
