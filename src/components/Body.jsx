@@ -1,4 +1,4 @@
-import RestaurantCard from './RestaurantCard';
+import RestaurantCard, {withPromotedLabel} from './RestaurantCard';
 // import {mockData} from '../../utils/mockData';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -10,7 +10,8 @@ const Body = () => {
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const [vegRestaurants, setVegRestaurants] = useState([]);
     const [searchText, setSearchText] = useState('');
-
+    
+    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
     useEffect(() => {
         fetchData();
     }, []);
@@ -18,7 +19,8 @@ const Body = () => {
     const fetchData = async () => {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
-        // console.log(json);
+        console.log(json);
+         console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants[0].info.isOpen);
         // console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
         // Mock data fetching
         setListOfRestaurants(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
@@ -86,7 +88,9 @@ if(onlinestatus===false)
 
             <div className="flex flex-wrap">
                 {filteredRestaurants.map((restaurant) => (
-                   <Link key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> <RestaurantCard  resData={restaurant.info} /></Link>
+                   <Link key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> 
+                   {restaurant.info.isOpen ? (<RestaurantCardPromoted resData={restaurant.info} />):(<RestaurantCard  resData={restaurant.info} />)}
+                   </Link>
                 ))}
             </div>
         </div>

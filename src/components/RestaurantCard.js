@@ -12,7 +12,7 @@ const RestaurantCard=(props)=>{
 };
 
     return (
-        <div className=" m-4 p-4 w-[250px] h-[320px] rounded-lg  bg-gray-100 hover:bg-gray-200 " >
+        <div className=" m-4 p-4 w-[250px] h-[300px] rounded-lg  bg-gray-100 hover:bg-gray-200 " >
             <img className="rounded-lg w-[200px] h-[120px] object-cover"
              src={CDN_URL+cloudinaryImageId} />
                 <h3 className='font-bold py-4 text-lg'>{name}</h3>   
@@ -28,5 +28,17 @@ const RestaurantCard=(props)=>{
 
         </div>
     )
-}
+};
+ export const withPromotedLabel = (RestaurantCard) => {
+    //return a new component with some additional features (like promotion)
+    //return the new component
+    return(props)=>{
+        return (
+            <div>
+                <label className='absolute bg-gray-500 text-white m-2 p-2 rounded-lg'>Online</label>
+                <RestaurantCard {...props}/>
+            </div>
+        );
+    };
+};
 export default RestaurantCard;

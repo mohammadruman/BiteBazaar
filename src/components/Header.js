@@ -2,6 +2,7 @@ import { LOGO_URL } from "../../utils/constants";
 import { useEffect, useState } from "react";
 import {Link} from 'react-router-dom';
 import useOnlineStatus from '../../utils/useOnlineStatus';
+import logo from "../../utils/logo.png";
 import Grocery  from "./Grocery";
 
 const Header = () => {
@@ -19,9 +20,9 @@ const Header = () => {
     },[btnName]);
 
      return (
-        <div className="flex items-center justify-between p-4 shadow-md">
+        <div className="flex items-center justify-between p-4 shadow-md bg-green-50">
             <div className="logo-container">
-                <img className="w-[100px]" src={LOGO_URL} alt="Logo" />
+                <img className="w-[100px]" src={logo} alt="Logo" />
             </div>
             <div className="nav-items">
                 <ul className="flex items-center space-x-4 md:space-x-8 m-4 p-4">
