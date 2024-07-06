@@ -34,18 +34,19 @@ if(onlinestatus===false)
     }
 
     return (
-        <div className="body">
-            <div className="filter">
-                <div className='search-bar'>
+        <div className="pr-[95px] pl-[110px]">
+            <div className="filter flex items-center pl-[220px]">
+                <div className='search-bar m-4 p-4 '>
                     <input
                         type='text'
-                        className='search-box'
+                        className='border border-solid border-gray-300 p-2 w-96 rounded-md'
                         placeholder='Search for Restaurants'
                         value={searchText}
                         onChange={(e) => setSearchText(e.target.value)}
                     />
+                    
                     <button
-                        className='search-btn'
+                        className='px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 ml-2'
                         onClick={() => {
                             const filteredRestaurant = listOfRestaurants.filter((restaurant) =>
                                 restaurant.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -62,15 +63,17 @@ if(onlinestatus===false)
                         }}
                     >Search</button>
                 </div>
-
+              <div className='m-4 p-4'>
                 <button
-                    className='filter-btn'
+                    className='px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300'
                     onClick={() => {
                         const filteredList = listOfRestaurants.filter((restaurant) => parseFloat(restaurant.info.avgRating) > 4.2);
                         setFilteredRestaurants(filteredList);
                     }}
                 >Top Rated Restaurants</button>
-                <button className='veg-btn'
+                </div>
+                <div className='m-4 p-4'>
+                <button className='px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 ml-2'
                 onClick={()=>{
                     const vegList = listOfRestaurants.filter((restaurant)=> restaurant.info.veg===true);
                     setFilteredRestaurants(vegList);
@@ -78,9 +81,10 @@ if(onlinestatus===false)
                 }}
                 
                 >Veg Only</button>
+                </div>  
             </div>
 
-            <div className="restaurant-container">
+            <div className="flex flex-wrap">
                 {filteredRestaurants.map((restaurant) => (
                    <Link key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> <RestaurantCard  resData={restaurant.info} /></Link>
                 ))}

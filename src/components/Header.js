@@ -18,38 +18,46 @@ const Header = () => {
     
     },[btnName]);
 
-    return (
-        <div className="header">
-            <div>
-                <img className="logo" src={LOGO_URL} />
+     return (
+        <div className="flex items-center justify-between p-4 shadow-md">
+            <div className="logo-container">
+                <img className="w-[100px]" src={LOGO_URL} alt="Logo" />
             </div>
-        <div className="nav-item">
-            <ul>
-               
-                <li>
-                    Online:{onlineStatus?"✅":"🔴"}
-                </li>
-            <li>
-                <Link to="/">Home</Link>
-                </li>
-            <li>
-              <Link to="/about">About-Us</Link>  
-                </li>
-            <li>
-              <Link to="/contact">Contact-us</Link>  
-                </li>
-                 <li>
-                   <Link to="/grocery">Grocery</Link>
-                </li>
-            <li>Cart</li>
-            <button className="login-btn" onClick={()=>{
-              btnName==="Login"?setbtnName("Logout"):setbtnName("Login");
-              
-            }}
-            >{btnName}</button>
-            </ul>
+            <div className="nav-items">
+                <ul className="flex items-center space-x-4 md:space-x-8 m-4 p-4">
+                    <li className="px-2">
+                        <span>Online:</span>
+                        <span>{onlineStatus ? "✅" : "🔴"}</span>
+                    </li>
+                    <li className="px-2">
+                        <Link className="hover:text-blue-500" to="/">Home</Link>
+                    </li>
+                    <li className="px-2">
+                        <Link className="hover:text-blue-500" to="/about">About Us</Link>
+                    </li>
+                    <li className="px-2">
+                        <Link className="hover:text-blue-500" to="/contact">Contact Us</Link>
+                    </li>
+                    <li className="px-2">
+                        <Link className="hover:text-blue-500" to="/grocery">Grocery</Link>
+                    </li>
+                    <li className="px-2">
+                        <Link className="hover:text-blue-500" to="/cart">Cart</Link>
+                    </li>
+                    <li>
+                        <button 
+                            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+                            onClick={() => {
+                                setbtnName(btnName === "Login" ? "Logout" : "Login");
+                            }}
+                        >
+                            {btnName}
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </div>
-    )
+    );
 }
+
 export default Header;

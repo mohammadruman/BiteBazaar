@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*/
+*
 .header{
     display: flex;
 justify-content: space-between;
@@ -92,6 +97,7 @@ border-radius: 10px;
 }
 
 /* login */
+/*
 .login-btn{
 
     margin: 20px;
@@ -99,10 +105,12 @@ border-radius: 10px;
     background-color: #f0f0f0;
     cursor: pointer;
     /* round edge*/
+    /*
     border-radius: 10px;
 }
-
+/*
 /* search bar */
+/*
 .search-bar{
     padding: 10px;
     margin: 10px;
@@ -114,16 +122,19 @@ border-radius: 10px;
     background-color: #f0f0f0;
     cursor: pointer;
     /* round edge*/
+    /*
     border-radius: 10px;
 }
+*/
 /* search box long*/
+/*
 .search-box{
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     /* long search bar*/
    
-
+/*
 }
 .filter{
     display: flex;
@@ -150,3 +161,4 @@ border-radius: 10px;
     align-items: center;
 }
 
+*/
