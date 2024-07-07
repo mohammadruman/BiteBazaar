@@ -12,6 +12,7 @@ fetchData();
 const fetchData= async()=>{
     const data = await fetch(MENU_API_URL+resId+MENU_API_REMAINING_URL);
     const json = await data.json();
+    console.log(json);
     setresInfo(json.data);
 };
 //return the data of the restaurant menu 

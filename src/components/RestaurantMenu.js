@@ -2,6 +2,7 @@ import {useEffect,useState} from 'react'
 import Shimmer from './Shimmer';
 import {useParams} from 'react-router-dom'
 import useRestaurantMenu from '../../utils/useRestaurantMenu';
+import RestaurantCategory from './RestaurantCategory';
 
 const RestaurantMenu = () => {
     const {resId} = useParams();
@@ -9,24 +10,24 @@ const RestaurantMenu = () => {
    
    
  if(resInfo===null) return <Shimmer/>;
+  
  const {itemCards} = resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[3].card.card;
- console.log(itemCards)
+ 
+ console.log(resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards);
+ const categiries = resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards.filter(c=>c.card?.card?.["@type"]==="type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
+    console.log(categiries);
+    
+
+   
  
   return (
-    <div className="menu">
-        <h1 className='bg-green-200 font-bold text-center text-4xl'>{resInfo.cards[0].card.card.text}</h1>
-         <p className='text-center'>{resInfo.cards[2].card.card.info.cuisines.join(", ")} - 
+    <div className="text-center">
+        <h1 className="font-bold my-6 text-2xl">{resInfo.cards[0].card.card.text}</h1>
+         <p className='font-bold text-lg'>{resInfo.cards[2].card.card.info.cuisines.join(", ")} - 
             {resInfo.cards[2].card.card.info.costForTwoMessage}</p>
-        <div className="menu-items">
-        <ul>
-            {itemCards.map(item => (<li className='flex justify-between items-center py-2 border-b border-green-200 bg-green-200' key={item.card.info.id}>
-                {item.card.info.name} - {"Rs."}
-                 {item.card.info.price/100 || item.card.info.defaultPrice/100}
-                 </li>
-                 ))}
-         
-        </ul>
-        </div>
+
+            {/* Categories for accorions*/}
+       {categiries.map((category)=><RestaurantCategory data = {category?.card?.card}/>)}
       
     </div>
   )
