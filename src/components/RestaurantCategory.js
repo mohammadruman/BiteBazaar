@@ -4,10 +4,8 @@ import {useState} from 'react';
 const RestaurantCategory = ({data,showitems,setShowIndex})=>{
 //     const [showitems,setshowitems]=useState(false);
     const handleclick=()=>{
-setShowIndex();
-
+setShowIndex(); 
  } 
-  
     return(
         <div>
              <div className="w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4">

@@ -31,3 +31,12 @@ Routing
 Two Types of Routing
 -Client side Routing
 -server side Routing
+
+
+#Redux 
+- installing the @reduxjs/toolkit and react-redux
+- Build out own store 
+-connect our store to the application
+-slice (cart slicing )
+-dispatch action 
+-selector
