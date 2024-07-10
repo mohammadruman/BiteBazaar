@@ -11,6 +11,7 @@ const Header = () => {
     const onlineStatus = useOnlineStatus();
     //subscribe to cart changes
     const cartItems = useSelector((store)=>store.cart.items);
+    console.log("cartItems",cartItems);
 //if we want to call the useEffect only once then we can pass an empty array as the second argument
 //if no dependency array is passed then the useEffect will be called on every render
 //if we pass an empty array then the useEffect will be called only once

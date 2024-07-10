@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const cardslice = createSlice({
     name: "card",
     initialState:{
-        items:["pizza","burger","coke","fries"]
+        items:[]
     },
     reducers:{
         //here we will write the reducer function corresponding to the action
