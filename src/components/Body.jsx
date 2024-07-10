@@ -17,7 +17,11 @@ const Body = () => {
     }, []);
 
     const fetchData = async () => {
+        
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        if (!data.ok) {
+           <h1 className='text-bold text-center text-black'>Sorry Something went wrong</h1>
+        }
         const json = await data.json();
         console.log(json);
         

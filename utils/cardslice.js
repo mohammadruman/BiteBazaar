@@ -5,6 +5,7 @@ const cardslice = createSlice({
     initialState:{
         items:[]
     },
+    //But when we are writing slice we create multiple reducers so this keyword is reducers 
     reducers:{
         //here we will write the reducer function corresponding to the action
         //we will write the reducer function to add the items to the items array
@@ -17,8 +18,14 @@ const cardslice = createSlice({
             state.items.pop();
 
         },
+        //original state  = {items:["pizza","burger","coke]}
         clearCart :(state,)=>{
-            state.items.length=0;
+            //redux toolkit will take care of the immutability
+            //redux toolkit - either we can mutate the state or we can return a new state
+            // state.items.length=0;
+            return {
+                items:[]  //this new object will be replace inside original state object new state object {items:[] }
+            }
         }
     }
 })
