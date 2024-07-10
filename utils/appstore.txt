@@ -1,0 +1,27 @@
+in app .js  the root of the application and we have to provide store to our 
+so we need a provider the appstore 
+so 
+in app.js 
+import { Provider } from "react-redux";
+import appstore from "../utils/appstore";
+import {provider} from react
+ <Provider store={appstore}>
+        <div className="App">
+            <Header/>
+            <Outlet/>
+            <Footer/>
+             </div>
+        </Provider>
+
+
+        so now lets create the slice for the store 
+- create a another file in utils 
+ *again this create slice come from a reduxjs toolkit because it is something that is realted to redux
+
+ and this function takes a configuration to create a slice 
+
+ import { createSlice } from "@reduxjs/toolkit";
+
+const cardslice = createSlice({
+    name:cart
+})

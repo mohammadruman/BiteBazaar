@@ -8,6 +8,8 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Footer from "./components/Footer";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Provider } from 'react-redux';
+import appstore from "../utils/appstore";
 // import Grocery from "./components/Grocery";
 //chunking
 //code splitting
@@ -21,24 +23,13 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
    const About = lazy(()=>import("./components/About"));
 const AppLayour =()=>{
     return (
+        <Provider store={appstore}>
         <div className="App">
             <Header/>
-            
-         {   
-            //ifpath is /"" then the Body component will be rendered
-            //if path is /About then the About component will be rendered
-            //if path is /Contact then the Contact component will be rendered
-            //if path is not matched then the Error component will be rendered
-            //so for this we will use the Outlet component
-            //Outlet component is used to render the component based on the path
-            // i want to push my chilren according to the route
-            //so i will use the Outlet component
-            
-            }
-            
             <Outlet/>
             <Footer/>
              </div>
+        </Provider>
     )
 }
 const appRouter = createBrowserRouter([

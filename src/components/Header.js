@@ -4,10 +4,13 @@ import {Link} from 'react-router-dom';
 import useOnlineStatus from '../../utils/useOnlineStatus';
 import logo from "../../utils/logo.png";
 import Grocery  from "./Grocery";
+import { useSelector } from "react-redux";
 
 const Header = () => {
     const [btnName,setbtnName] = useState("Login");
     const onlineStatus = useOnlineStatus();
+    //subscribe to cart changes
+    const cartItems = useSelector((store)=>store.cart.items);
 //if we want to call the useEffect only once then we can pass an empty array as the second argument
 //if no dependency array is passed then the useEffect will be called on every render
 //if we pass an empty array then the useEffect will be called only once
@@ -43,7 +46,7 @@ const Header = () => {
                         <Link className="hover:text-blue-500" to="/grocery">Grocery</Link>
                     </li>
                     <li className="px-2">
-                        <Link className="hover:text-blue-500" to="/cart">Cart</Link>
+                        <Link className="hover:text-blue-500 font-bold text-xl" to="/cart">🛒 ({cartItems.length} Items)</Link>
                     </li>
                     <li>
                         <button 
