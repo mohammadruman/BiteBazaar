@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import useOnlineStatus from '../../utils/useOnlineStatus';
 import logo from "../../utils/logo.png";
 import Grocery  from "./Grocery";
+import Cart from "./Cart";
 import { useSelector } from "react-redux";
 
 const Header = () => {
@@ -47,7 +48,7 @@ const Header = () => {
                         <Link className="hover:text-blue-500" to="/grocery">Grocery</Link>
                     </li>
                     <li className="px-2">
-                        <Link className="hover:text-blue-500 font-bold text-xl" to="/cart">🛒 ({cartItems.length} Items)</Link>
+                        <Link className="hover:text-blue-500 font-bold text-xl" to="/Cart">🛒 ({cartItems.length} Items)</Link>
                     </li>
                     <li>
                         <button 

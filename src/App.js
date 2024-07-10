@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from 'react-redux';
 import appstore from "../utils/appstore";
+import Cart from "./components/Cart";
 // import Grocery from "./components/Grocery";
 //chunking
 //code splitting
@@ -60,6 +61,10 @@ const appRouter = createBrowserRouter([
             {
                 path:"/restaurants/:resId",
                 element:<RestaurantMenu/>,
+            },
+             {
+                path:"/cart",
+                element:<Cart/>,
             }
         ],
         errorElement:<Error/>,
