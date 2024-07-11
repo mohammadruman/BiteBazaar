@@ -25,7 +25,7 @@ const Header = () => {
     },[btnName]);
 
      return (
-        <div className="flex items-center justify-between p-4 shadow-md bg-green-50">
+        <div className="flex items-center justify-between shadow-md bg-green-50">
             <div className="logo-container">
                 <img className="w-[100px]" src={logo} alt="Logo" />
             </div>
