@@ -90,7 +90,7 @@ if(onlinestatus===false)
                 </div>  
             </div>
 
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-around">
                 {filteredRestaurants.map((restaurant) => (
                    <Link key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> 
                    {restaurant.info.isOpen ? (<RestaurantCardPromoted resData={restaurant.info} />):(<RestaurantCard  resData={restaurant.info} />)}
