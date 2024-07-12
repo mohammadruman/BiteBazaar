@@ -45,6 +45,7 @@ const Footer = () => {
         <div className="mt-8 text-center text-gray-400 text-sm">
           &copy; {new Date().getFullYear()} BiteBazaar. All rights reserved.
           <h4> Github Repository Link</h4>
+          <Link ></Link>
         </div>
       </div>
     </footer>
