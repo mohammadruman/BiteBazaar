@@ -40,7 +40,7 @@ if(onlinestatus===false)
     }
 
     return (
-        <div className="pr-[95px] pl-[110px]">
+        <div className="pr-[100px] pl-[100px]">
             <div className="filter flex items-center ">
                 <div className='search-bar m-4 p-4 '>
                     <input
@@ -92,7 +92,7 @@ if(onlinestatus===false)
 
             <div className="flex flex-wrap justify-around">
                 {filteredRestaurants.map((restaurant) => (
-                   <Link key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> 
+                   <Link  key={restaurant.info.id} to={"/restaurants/"+ restaurant.info.id}> 
                    {restaurant.info.isOpen ? (<RestaurantCardPromoted resData={restaurant.info} />):(<RestaurantCard  resData={restaurant.info} />)}
                    </Link>
                 ))}
