@@ -40,7 +40,7 @@ if(onlinestatus===false)
     }
 
     return (
-        <div className="pr-[100px] pl-[100px]">
+        <div className="pr-[90px] pl-[90px]">
             <div className="filter flex items-center ">
                 <div className='search-bar m-4 p-4 '>
                     <input
