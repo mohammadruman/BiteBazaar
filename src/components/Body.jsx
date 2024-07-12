@@ -41,7 +41,7 @@ if(onlinestatus===false)
 
     return (
         <div className="">
-            <div className="filter flex items-center ">
+            <div className="filter flex items-center  pl-[200px] ">
                 <div className='search-bar m-4 p-4 '>
                     <input
                         type='text'
