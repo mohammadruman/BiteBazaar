@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Top Cities</h3>
             <ul className="space-y-2">
-              <li className="hover:text-gray-400 cursor-pointer">Mumbai</li>
+            <li className="hover:text-gray-400 cursor-pointer">Mumbai</li>
               <li className="hover:text-gray-400 cursor-pointer">Delhi</li>
               <li className="hover:text-gray-400 cursor-pointer">Bengaluru</li>
               <li className="hover:text-gray-400 cursor-pointer">Kolkata</li>
@@ -44,9 +45,10 @@ const Footer = () => {
         </div>
         <div className="mt-8 text-center text-gray-400 text-sm">
           &copy; {new Date().getFullYear()} BiteBazaar. All rights reserved.
-          <h4> Github Repository Link</h4>
-          <Link ></Link>
         </div>
+        <div className='text-center'>
+          <Link  to={"https://github.com/mohammadruman/BiteBazaar"}> Github Repository</Link>
+       </div>
       </div>
     </footer>
   );
