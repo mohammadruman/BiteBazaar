@@ -32,8 +32,8 @@ const Header = () => {
             <div className="nav-items">
                 <ul className="flex items-center space-x-4 md:space-x-8 m-4 p-4">
                     <li className="px-2">
-                        <span>Online:</span>
-                        <span>{onlineStatus ? "✅" : "🔴"}</span>
+                        <span></span>
+                        <span>{onlineStatus ? "🟢" : "🔴"}</span>
                     </li>
                     <li className="px-2">
                         <Link className="hover:text-blue-500" to="/">Home</Link>
